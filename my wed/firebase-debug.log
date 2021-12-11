@@ -1,0 +1,74 @@
+[debug] [2021-12-05T19:46:56.607Z] ----------------------------------------------------------------------
+[debug] [2021-12-05T19:46:56.607Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ouldziane\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2021-12-05T19:46:56.607Z] CLI Version:   9.23.0
+[debug] [2021-12-05T19:46:56.607Z] Platform:      win32
+[debug] [2021-12-05T19:46:56.607Z] Node Version:  v13.14.0
+[debug] [2021-12-05T19:46:56.622Z] Time:          Sun Dec 05 2021 20:46:56 GMT+0100 (heure normale d’Afrique de l’Ouest)
+[debug] [2021-12-05T19:46:56.622Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-05T19:46:56.872Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-05T19:46:56.872Z] > authorizing via signed-in user (ouldzianeyassine@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ouldziane
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using dfdf-510b8. 
+[debug] [2021-12-05T19:47:00.484Z] > refreshing access token with scopes: []
+[debug] [2021-12-05T19:47:00.484Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-05T19:47:00.921Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 05 Dec 2021 19:47:00 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-05T19:47:01.045Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dfdf-510b8 [none]
+[debug] [2021-12-05T19:47:01.576Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dfdf-510b8 200
+[debug] [2021-12-05T19:47:01.576Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dfdf-510b8 {"projectId":"dfdf-510b8","projectNumber":"892463099415","displayName":"dfdf","name":"projects/dfdf-510b8","resources":{"hostingSite":"dfdf-510b8","realtimeDatabaseInstance":"dfdf-510b8-default-rtdb","storageBucket":"dfdf-510b8.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-12-05T19:49:22.834Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-12-05T19:49:23.130Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-12-05T19:49:23.130Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.0","browserURL":"https://www.gstatic.com/firebasejs/9.6.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.0/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.memory.js"}}
+[info] +  Wrote index/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\ouldziane\Downloads\my wed is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=362998260&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-12-05T19:50:18.394Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"46d0b8cdeea724cd33be","redirect_uri":"http://localhost:9005","state":"362998260"}
+[debug] [2021-12-05T19:50:18.909Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 05 Dec 2021 19:50:18 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"8005e4d60beda46b2cd7ffbef4f50bb4\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"C0D0:F671:1D608D0:1EFFE49:61AD17FA"}
+[debug] [2021-12-05T19:50:18.939Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-12-05T19:50:19.463Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-12-05T19:50:19.464Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"HAHROZ","id":75861235,"node_id":"MDQ6VXNlcjc1ODYxMjM1","avatar_url":"https://avatars.githubusercontent.com/u/75861235?v=4","gravatar_id":"","url":"https://api.github.com/users/HAHROZ","html_url":"https://github.com/HAHROZ","followers_url":"https://api.github.com/users/HAHROZ/followers","following_url":"https://api.github.com/users/HAHROZ/following{/other_user}","gists_url":"https://api.github.com/users/HAHROZ/gists{/gist_id}","starred_url":"https://api.github.com/users/HAHROZ/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/HAHROZ/subscriptions","organizations_url":"https://api.github.com/users/HAHROZ/orgs","repos_url":"https://api.github.com/users/HAHROZ/repos","events_url":"https://api.github.com/users/HAHROZ/events{/privacy}","received_events_url":"https://api.github.com/users/HAHROZ/received_events","type":"User","site_admin":false,"name":"yassine ouldziane","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":1,"created_at":"2020-12-11T20:31:02Z","updated_at":"2021-11-17T11:20:54Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":159,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as HAHROZ 
+[info] 
+[debug] [2021-12-05T19:52:42.012Z] >>> [apiv2][query] GET https://api.github.com/repos/"C:\Users\ouldziane\Downloads\my wed"/actions/secrets/public-key type=owner
+[debug] [2021-12-05T19:52:42.449Z] <<< [apiv2][status] GET https://api.github.com/repos/"C:\Users\ouldziane\Downloads\my wed"/actions/secrets/public-key 404
+[debug] [2021-12-05T19:52:42.449Z] <<< [apiv2][body] GET https://api.github.com/repos/"C:\Users\ouldziane\Downloads\my wed"/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-12-05T19:52:59.409Z] >>> [apiv2][query] GET https://api.github.com/repos/dir/actions/secrets/public-key type=owner
+[debug] [2021-12-05T19:52:59.752Z] <<< [apiv2][status] GET https://api.github.com/repos/dir/actions/secrets/public-key 404
+[debug] [2021-12-05T19:52:59.752Z] <<< [apiv2][body] GET https://api.github.com/repos/dir/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
